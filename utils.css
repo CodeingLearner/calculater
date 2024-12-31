@@ -239,16 +239,10 @@ body {
 }
 
 
-/* Media Query for Mobile Devices */
+/* Media Query for Tablets and Smaller Screens */
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-        flex-direction: column; /* Maintain vertical stacking */
-    }
-
     .center-h1 {
-        width: 90vw;
-        
+        width: 90%;
         height: auto;
         padding: 20px;
         margin-top: 40px;
@@ -257,18 +251,13 @@ body {
     .center {
         width: 90%;
         padding: 20px;
-        margin-top: 20px;
-    }
-
-    .row {
-        justify-content: center; /* Center buttons */
     }
 
     .button {
         height: 50px;
         width: 50px;
         font-size: 16px;
-        margin: 5px; /* Reduce button spacing */
+        margin: 5px;
     }
 
     .input {
@@ -278,5 +267,39 @@ body {
 
     #equals {
         font-size: 1.2rem;
+    }
+}
+
+/* Media Query for Small Phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .center-h1 {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .center {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .button {
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+        margin: 4px;
+    }
+
+    .input {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #equals {
+        font-size: 1rem;
     }
 }
