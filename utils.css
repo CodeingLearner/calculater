@@ -238,49 +238,45 @@ body {
     background-color: #c0392b;
 }
 
-/* Responsive Styles */
+
+/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    .center {
-        width: 90%; /* Adjust width for smaller screens */
+    body {
+        padding: 10px;
+        flex-direction: column; /* Maintain vertical stacking */
+    }
+
+    .center-h1 {
+        width: 90vw;
+        
+        height: auto;
         padding: 20px;
+        margin-top: 40px;
     }
 
-    .input {
-        font-size: 0.8rem; /* Reduce font size for better fit */
-        padding: 12px;
-    }
-
-    .button {
-        height: 55px;
-        width: 55px;
-        font-size: 0.9rem; /* Adjust button font size */
+    .center {
+        width: 90%;
+        padding: 20px;
+        margin-top: 20px;
     }
 
     .row {
-        gap: 8px; /* Adjust button spacing */
-    }
-}
-
-@media (max-width: 480px) {
-    .center {
-        width: 95%; /* Further adjust for very small screens */
-        max-width: 300px;
-        padding: 15px;
-    }
-
-    .input {
-        font-size: 0.8rem; /* Smaller font size for input field */
-        padding: 10px;
-        width: 50%;
+        justify-content: center; /* Center buttons */
     }
 
     .button {
         height: 50px;
         width: 50px;
-        font-size: 0.8rem; /* Reduce button size */
+        font-size: 16px;
+        margin: 5px; /* Reduce button spacing */
     }
 
-    .row {
-        gap: 2px; /* Reduce spacing for buttons */
+    .input {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    #equals {
+        font-size: 1.2rem;
     }
 }
